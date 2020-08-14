@@ -1,15 +1,22 @@
 language: php
 php:
-<<<<<<< HEAD: .travis.yml
-  - '7.4'
 
-script:
+  - '7.4'
+env:
+  - SYMFONY_VERSION="5.1.*" DB=mysql
+# Update composer
+before-install:
+  - composer self-update
+# Install composer dependencies,
+# Create database, schema and fixtures
+install:
   - composer install
-  - php bin/phpunit
-=======
-  - '7.4.8'
+  - php bin/console doctrine:database:create --env=test
+  - php bin/console doctrine:schema:create --env=test
+  - php bin/console doctrine:fixtures:load -n --env=test
+  
 
 script:
   - composer install
   - ./bin/phpunit
->>>>>>> e9c717a7a7ee15913b50a53cd4ed1f0981e7720e:.travis.yml
+
