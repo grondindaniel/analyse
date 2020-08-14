@@ -1,0 +1,15 @@
+language: php
+php:
+<<<<<<< HEAD: .travis.yml
+  - '7.4'
+
+script:
+  - composer install
+  - php bin/phpunit
+=======
+  - '7.4.8'
+
+script:
+  - composer install
+  - ./bin/phpunit
+>>>>>>> e9c717a7a7ee15913b50a53cd4ed1f0981e7720e:.travis.yml

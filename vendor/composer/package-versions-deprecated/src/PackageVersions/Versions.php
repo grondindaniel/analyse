@@ -23,7 +23,7 @@ final class Versions
      *             `\Composer\InstalledVersions::getRootPackage()['name']`.
      *             This constant will be removed in version 2.0.0.
      */
-    const ROOT_PACKAGE_NAME = 'todoco';
+    const ROOT_PACKAGE_NAME = 'grondindaniel/todoco';
 
     /**
      * Array of all available composer packages.
@@ -33,7 +33,7 @@ final class Versions
      * @internal
      */
     const VERSIONS          = array (
-  'composer/package-versions-deprecated' => '1.10.99@dd51b4443d58b34b6d9344cf4c288e621c9a826f',
+  'composer/package-versions-deprecated' => '1.10.99.1@68c9b502036e820c33445ff4d174327f6bb87486',
   'doctrine/annotations' => '1.10.4@bfe91e31984e2ba76df1c1339681770401ec262f',
   'doctrine/cache' => '1.10.2@13e3381b25847283a91948d04640543941309727',
   'doctrine/collections' => '1.6.7@55f8b799269a1a472457bd1a41b4f379d4cfba4a',
@@ -156,7 +156,7 @@ final class Versions
   'symfony/polyfill-php71' => '*@709a2bc4eb54c273b17e73f73c65527b370c6888',
   'symfony/polyfill-php70' => '*@709a2bc4eb54c273b17e73f73c65527b370c6888',
   'symfony/polyfill-php56' => '*@709a2bc4eb54c273b17e73f73c65527b370c6888',
-  'todoco' => 'dev-master@709a2bc4eb54c273b17e73f73c65527b370c6888',
+  'grondindaniel/todoco' => 'dev-master@709a2bc4eb54c273b17e73f73c65527b370c6888',
 );
 
     private function __construct()
